@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #EDF2EF;
+    height: 100%;
+}
+
+.App {
+    width: 100%;
+    background-color: #EDF2EF;
+    color: #EDF2EF;
+}
+
+.brand {
+    height: auto;
+    width: 3%;
+    display: block;
+    float: left;
+
+}
+
+.App-header {
+    background-color: #57C4E5;
+    padding: 0.4rem 1rem;
+    text-align: right;
+}
+
+.App-header li  {
+    color: black;
+}
+
+.App-header li a {
+    background-color: #D1D646;
+    color: black;
+    padding: 14px 25px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+.App-header li a:hover, li a:active {
+    background-color: white;
+}
+
+.loggedIn {
+    text-align: right;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+
+.App-body {
+    min-height: 100%;
+    width: 62em;
+    margin: 0 auto;
+    padding: 2em 6em 8em;
+    background-color: #EDF2EF;
+    color: white;
+    padding-bottom: 12%;
+    margin-bottom: 100px;
+}
+
+.App-footer {
+    height: 10%;
+    margin-top: -10%;
+    background-color: #09233A;
+    padding: 2rem;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.parentBox {
+    width: 50em;
+    background-color: red;
+    white-space:nowrap;
+}
+
+canvas {
+    height: 100%;
+ }
+
+
+.stocks {
+    width: 50%;
+    border-collapse: collapse;
+}
+
+.stocks td, .stocks th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    color: black;
+}
+
+.stocks th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(27, 156, 216);
+    color: black;
+}
+
+
+.stockBox {
+    background-color: #F97068;
+    width: 15em;
+    border: 5px solid black;
+    padding: 1em 2em 5em;
+    margin: 0.8em;
+    text-align: center;
+    display:inline-block;
+}
+
+.buyButton {
+    background-color:#D1D646; /* Green */
+    border: none;
+    color: black;
+    margin-top: 1em;
+    padding: 1em 2em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+  }
+
+.buyButton:hover {
+    background-color: white;
+}
+
+.sellButton:hover {
+    background-color: white;
+}
+
+.sellButton {
+    background-color: #57C4E5; /* Green */
+    border: none;
+    color: black;
+    margin: 0.1em;
+    padding: 1em 2em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 8em;
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: 100;
+    color: black;
+}
+
+h4 {
+    font-size: 1.4em;
+    font-weight: 100;
+    color: black;
+}
+
+p {
+    color: black;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    margin-right: 1em;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.4em;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+.question {
+  margin-bottom: 2em;
+}
+
+
+.input-label {
+    display: block;
+    margin-bottom: 2rem;
+    color: black;
+}
+
+.input-field {
+    width: 50%;
+    padding: 0.4rem 1rem;
+    font-size: 1.2rem;
+}
+
+
+
+.input-field:focus {
+    outline: 3px solid green;
+}
+
+
+.date-field {
+    width: 100%;
+    padding: 0.4rem 1rem;
+    font-size: 1.2rem;
+}
+
+
+input[type=submit] {
+    background-color: #D1D646;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.passwordBox {
+    float: right;
+    width: 10%;
+    height: 200px;
+    background-color: white;
+}
+
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .input-field {
+        width: 25vw;
+    }
+    .date-field {
+        width: 10vw;
+    }
+
+    .brand {
+        display: none;
+    }
+
+    .App-header {
+        font-size: 2vw;
+        padding: 0;
+        text-align: center;
+    }
+
+    .App-body {
+        word-wrap: break-word;
+        width: 100%;
+    }
+    
+    .chart {
+        margin: 0 auto;
+    }
+
+    .stockBox {
+        margin: 0 auto;
+        display: block;
+    }
+
+
+    hr {
+    display: none;
+    }
+
+    h1 {
+        font-size: 6vw;
+        font-weight: 100;
+    }
+    
+    h2 {
+        font-size: 5vw;
+        font-weight: 100;
+        color: black;
+    }
+    
+    h4 {
+        font-size: 4vw;
+        font-weight: 100;
+        color: black;
+    }
+    
+    p {
+        color: black;
+        font-size: 3vw;
+        font-weight: normal;
+    }
+    
+    ul {
+        list-style-type: none;
+    }
+    
+    li {
+        display: inline;
+        margin-right: 1em;
+    }
+    
+    li a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.4em;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    button {
+        display: block;
+    }
+
+    .brand {
+        display: none;
+    }
+
+    .input-field {
+        width: 50vw;
+    }
+    
+    .input-label {
+        margin: 0
+    }
+
+
+    .App-header {
+        font-size: 2vw;
+        padding: 0;
+        text-align: center;
+    }
+
+    .App-body {
+        word-wrap: break-word;
+        width: 100%;
+        padding: 10vw;
+        padding-left: 0;
+    }
+
+    .App-footer {
+        display: none;
+    }
+
+    .stockBox {
+        width: 100vw;
+        margin: 0 auto;
+        padding: 1em 0em;
+    }
+
+    input {
+        margin: 5em;
+        padding: 1em;
+    }
+
+    hr {
+    display: none;
+    }
+
+    h1 {
+        font-size: 8vw;
+        font-weight: 100;
+    }
+    
+    h2 {
+        font-size: 7vw;
+        font-weight: 100;
+        color: black;
+    }
+    
+    h4 {
+        font-size: 6vw;
+        font-weight: 100;
+        color: black;
+    }
+    
+    p {
+        color: black;
+        font-size: 8vw;
+        font-weight: normal;
+    }
+    
+    ul {
+        list-style-type: none;
+    }
+    
+    li {
+        display: inline;
+        margin-right: 1em;
+    }
+    
+    li a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.4em;
+    }
+
+    .chart {
+        min-width: 350px;
+        height: auto;
+    }
+
+}
