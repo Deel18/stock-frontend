@@ -9,7 +9,7 @@ const initialState = {
     redirect: false
 };
 
-
+const URL = "https://stock-api.deel-ramverk.me/login"
 
 
 export default class Login extends React.Component {
@@ -38,7 +38,7 @@ export default class Login extends React.Component {
 
         axios({
             method: 'POST',
-            url: "http://localhost:8421/login",
+            url: URL,
             data: {
                 email: this.state.email,
                 password: this.state.password,

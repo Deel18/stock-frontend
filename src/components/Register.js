@@ -12,7 +12,7 @@ const initialState = {
     registered: "",
 };
 
-
+const URL = "https://stock-api.deel-ramverk.me/register";
 
 
 export default class Register extends React.Component {
@@ -67,7 +67,7 @@ export default class Register extends React.Component {
 
             axios({
                 method: 'POST',
-                url: "http://localhost:8421/register",
+                url: URL,
                 data: {
                     email: this.state.email,
                     password: this.state.password,

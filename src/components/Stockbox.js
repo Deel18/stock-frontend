@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 const jwt = require("jsonwebtoken");
 
-
+const URL = "https://stock-api.deel-ramverk.me/stocks/"
 
 const initialState = {
     buyAmount: 0,
@@ -49,7 +49,7 @@ export default class Stockbox extends React.Component {
 
         axios({
             method: "GET",
-            url: "http://localhost:8421/stocks/" + email,
+            url: URL + email,
             headers: headers,
         })
         .then(res => {
@@ -82,7 +82,7 @@ export default class Stockbox extends React.Component {
 
         axios({
             method: 'POST',
-            url: "http://localhost:8421/stocks/" + email,
+            url: URL + email,
             data: data,
             headers: headers, 
         })

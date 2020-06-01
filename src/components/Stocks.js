@@ -9,7 +9,8 @@ const jwt = require("jsonwebtoken");
 //TODO: setup an alert message that informs of purchase being made.
 //TODO: Update balance after a successful purchase
 
-const server = "http://localhost:8999";
+const server = "https://stock-socket.deel-ramverk.me";
+const URL = "https://stock-api.deel-ramverk.me/users/";
 
 export default class Stocks extends React.Component {
     constructor(props) {
@@ -84,7 +85,7 @@ export default class Stocks extends React.Component {
 
         axios({
             method: "GET",
-            url: "http://localhost:8421/users/" + email,
+            url: URL + email,
             headers: headers,
 
         })

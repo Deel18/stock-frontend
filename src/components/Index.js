@@ -13,7 +13,7 @@ export default class Index extends React.Component {
     }
 
     componentDidMount() {
-        axios.get("http://localhost:8421/")
+        axios.get("https://stock-api.deel-ramverk.me")
         .then(res => {
             console.log(res.data.data.message)
             const intro = res.data.data.message;

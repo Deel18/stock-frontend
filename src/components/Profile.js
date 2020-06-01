@@ -3,6 +3,7 @@ import { Redirect } from "react-router-dom";
 import axios from "axios";
 const jwt = require("jsonwebtoken");
 
+const URL = "https://stock-api.deel-ramverk.me"
 
 export default class Profile extends React.Component {
     constructor(props) {
@@ -39,7 +40,7 @@ export default class Profile extends React.Component {
 
         axios({
             method: 'POST',
-            url: "http://localhost:8421/balance/" + email,
+            url: URL + "/balance/" + email,
             data: {
                 email: email,
                 balance: parseInt(this.state.intro.balance) + parseInt(this.state.balance)
@@ -65,7 +66,7 @@ export default class Profile extends React.Component {
 
         axios({
             method: "GET",
-            url: "http://localhost:8421/users/" + email,
+            url: URL + "/users/" + email,
             headers: headers,
 
         })
@@ -87,7 +88,7 @@ export default class Profile extends React.Component {
 
         axios({
             method: "GET",
-            url: "http://localhost:8421/stocks/" + email,
+            url: URL + "/stocks/" + email,
             headers: headers,
         })
         .then(res => {
@@ -100,8 +101,6 @@ export default class Profile extends React.Component {
         
         })
     }
-
-    
     componentDidMount() {
         this.fetchBalance();
         this.fetchStocks();
