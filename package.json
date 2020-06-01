@@ -22,7 +22,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm rub build && rsync -av build/* deploy@206.189.16.82:/var/www/project.deel-ramverk.me/html/"
   },
   "eslintConfig": {
     "extends": "react-app"
